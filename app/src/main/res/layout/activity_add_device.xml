@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.xyx.wiselampdesk.addDevice">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:orientation="vertical"
+        android:background="@color/add_gray">
+
+        <ImageView
+            android:id="@+id/add_device_back"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/add_back"/>
+
+        <ListView
+            android:id="@+id/deviceList"
+            android:layout_width="320dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/corner_view"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_bg_red"
+            android:text="查找设备"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择要添加的设备"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/tv_gray_deep"
+            android:layout_gravity="center_horizontal"
+            android:textSize="18dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:text=" 如果找不到设备，请确认设备是否被正确重置。"/>
+
+    <Button
+        android:id="@+id/next_step"
+        android:layout_width="230dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/btn_bg_red"
+        android:text="下一步"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>
