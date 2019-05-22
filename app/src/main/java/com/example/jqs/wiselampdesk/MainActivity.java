@@ -1,53 +1,30 @@
-package com.example.xyx.wiselampdesk;
+package com.example.jqs.wiselampdesk;
 
-import android.app.Activity;
 import android.app.FragmentTransaction;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.net.Uri;
-import android.net.wifi.WifiManager;
 import android.os.Build;
-import android.os.Handler;
-import android.os.Message;
 import android.os.StrictMode;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.*;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
-import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.CommonActivities.BaseActivity;
 import com.CommonActivities.User;
-import com.CommonActivities.myApplication;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.fragment.DeviceFragment;
 import com.fragment.HomeFragment;
 import com.fragment.SceneFragment;
-import com.readystatesoftware.systembartint.SystemBarTintManager;
 
 import java.io.FileNotFoundException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.MulticastSocket;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-import static android.view.View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
 
 public class MainActivity extends BaseActivity {
 

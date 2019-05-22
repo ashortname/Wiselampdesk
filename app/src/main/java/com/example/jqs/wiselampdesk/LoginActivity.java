@@ -1,4 +1,4 @@
-package com.example.xyx.wiselampdesk;
+package com.example.jqs.wiselampdesk;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -6,11 +6,11 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.*;
 import android.preference.PreferenceManager;
-import android.support.v4.view.ViewCompat;
+import android.text.InputType;
 import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.*;
@@ -37,6 +37,8 @@ public class LoginActivity extends BaseActivity {
     private SharedPreferences pref;
     private SharedPreferences.Editor editor;
     private boolean isRemenber, isAutoLogin;
+
+    private static Boolean IsOpen = false;
 
 //    //管理活动
     private LoginActivity loginCon = this;
@@ -107,14 +109,21 @@ public class LoginActivity extends BaseActivity {
 
 
         /**
-         * 点击按钮显示密码
+         * 点击按钮显示或隐藏密码
          */
         ImageView see_picture=(ImageView)findViewById(R.id.iv_see_password);
         final EditText password = (EditText)findViewById(R.id.et_password);
         see_picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                if(IsOpen)
+                {
+                    password.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                    IsOpen = false;
+                }else{
+                    password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                    IsOpen = true;
+                }
             }
         });
 

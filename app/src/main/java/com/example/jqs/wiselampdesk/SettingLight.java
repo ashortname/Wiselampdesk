@@ -1,4 +1,4 @@
-package com.example.xyx.wiselampdesk;
+package com.example.jqs.wiselampdesk;
 
 import android.os.Bundle;
 import com.CommonActivities.BaseActivity;

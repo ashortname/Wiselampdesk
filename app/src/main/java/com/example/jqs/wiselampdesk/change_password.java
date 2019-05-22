@@ -1,10 +1,8 @@
-package com.example.xyx.wiselampdesk;
+package com.example.jqs.wiselampdesk;
 
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.*;
-import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;

@@ -1,4 +1,4 @@
-package com.example.xyx.wiselampdesk;
+package com.example.jqs.wiselampdesk;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,7 +7,6 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;

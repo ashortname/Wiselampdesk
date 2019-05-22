@@ -11,8 +11,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.xyx.wiselampdesk.R;
-import com.example.xyx.wiselampdesk.addDevice;
+import com.example.jqs.wiselampdesk.R;
+import com.example.jqs.wiselampdesk.addDevice;
 
 /**
  * Created by lenovo on 2018/7/5.

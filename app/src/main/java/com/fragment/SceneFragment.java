@@ -1,7 +1,6 @@
 package com.fragment;
 
 import android.app.Fragment;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -11,8 +10,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.xyx.wiselampdesk.LoginActivity;
-import com.example.xyx.wiselampdesk.R;
+import com.example.jqs.wiselampdesk.R;
 
 /**
  * Created by lenovo on 2018/7/5.
